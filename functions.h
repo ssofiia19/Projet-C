@@ -1,4 +1,11 @@
+#ifndef FONCTIONS_H
+#define FONCTIONS_H
 
+#define MAX_AGE 100
+#define MIN_AGE 0
+#define MAJOR 18
+
+#define new_line printf("\n");
 
 int regions();
 
