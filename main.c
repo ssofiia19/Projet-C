@@ -1,6 +1,48 @@
 #include <stdio.h>
 
-/*/
+
+
+//int research(int t[], )
+int main(){
+chose_region();
+}
+
+
+int regions()
+{
+   int r[] = { 1,3,69,15,26};
+    //int i[]={75,92,77,78,93};
+      printf("%d\n",r[3]);
+}
+
+void chose_region()
+{
+  int r[] = { 1,3,69,15,26};
+
+    int x;
+  
+  for (x = 0; r[x]!='\0'; x++) {
+    printf("%d\n", r[x]);
+  }
+  
+ // for (i = 0; i < n; i++);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 int age(int x)
 {
  if (x >= 18) 
@@ -17,15 +59,10 @@ void affichage (int x)
     printf("%d: Mineur\n ", x);
 }
 
-int main()
-{
-    affichage(age(18));
-     
- } 
+////////////////////////////////////////////////////////////////
 
-/*/
 
-/*/int equal(int a, int b)
+int equal(int a, int b)
 {
  if (a == b) 
     return 1;
@@ -35,36 +72,70 @@ int main()
 
 void affich (int x)
 {
-  if(equal(x) ==1)
+  if((x) ==1)
     printf("%d: Equal\n",x);
   else
     printf("%d: not equal\n",x);
 }
 
-int main()
-{
-    affich(equal(18, 18));
-     
- }
- /*/
+
+
+///////////////////////////////////////////////////////////////////////::
 
 
 
 int somme(int n){
   int sum=0;
-  int i = 0;
-    while(i <= n){
-        sum=sum+i;
-        printf(" sum=%i | i = %i",sum,i);
-        i++;
+    while(n > 0){
+        sum=sum+n;
+        n--;
+        printf("sum");
     }
     return sum;
 }
 
-int main(){
-  int total = 0;
-  total=somme(3);
-  printf ("%i\n",total);
-  
+/////////////////////////////////////////////////////////////////////////////////////////////::
+int factorielle(int n);
+
+
+int factorielle(int n){
+if (n>0)
+  return n*factorielle(n-1);
+else
+  return 1;
 }
+///////////////////////////////////////////////////////////
+
+
+//int main(){
+//int t[12];
+//t[0] = 2;
+//t[1] = 3;
+//t[2] = 4;
+//t[3] = 5;
+//printf("%d\n",t[2]);
+//}
+
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+int display(){
+  int i;
+  for (i = 0; i < 6; i++) {
+   // printf("%d\n", t[0]);
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
