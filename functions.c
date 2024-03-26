@@ -76,3 +76,26 @@ void show_region()
   
  // for (i = 0; i < n; i++);
 }
+
+
+
+int research()
+{
+  int region[] = { 1,3,69,15,26};
+  int i;
+  int x;
+  printf("Type a number: \n");
+  scanf("%d", &x);
+  for (i=0; i< 5; i++)
+  {
+    if (region[i]==x)
+    {
+        return  1;
+    }
+  }
+
+  return 0;
+
+
+
+}
