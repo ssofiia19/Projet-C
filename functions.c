@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "functions.h"
 
-
+/*
 int regions()
 {
    int r[] = { 1,3,69,15,26};
@@ -12,7 +12,7 @@ int regions()
 int display(){
   int i;
   for (i = 0; i < 6; i++) {
-   // printf("%d\n", t[0]);
+   //printf("%d\n", t[0]);
   }
 }
 
@@ -63,39 +63,90 @@ int age(int x)
  else 
     return 0;
 }
+*/
 
-void show_region()
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+void show_region(int region[])
 {
-  int r[] = { 1,3,69,15,26};
-
     int x;
   
-  for (x = 0; r[x]!='\0'; x++) {
-    printf("%d\n", r[x]);
+  for (x = 0; x<20; x++) {
+    printf("%d\n", region[x]);
   }
   
- // for (i = 0; i < n; i++);
 }
 
 
 
-int research()
+int research(int region[20])
 {
-  int region[] = { 1,3,69,15,26};
   int i;
   int x;
   printf("Type a number: \n");
   scanf("%d", &x);
-  for (i=0; i< 5; i++)
+  for (i=0; i<20; i++)
   {
     if (region[i]==x)
     {
         return  1;
     }
+     
   }
 
   return 0;
-
-
-
 }
+
+
+int ajouter_dep(int region[])
+{
+    int value;
+    int i;
+
+  printf("Type a value to insert: \n");
+  scanf("%d",&value); 
+
+  for (i=0; i<20; i++)
+  {
+    if(region[i] == 0)
+    {
+      region[i] = value;
+      return 1;
+    }
+  }
+   return 0;   
+ }
+
+
+
+
+int suprimer_dep(int region[])
+{
+ int departm;
+    int x;
+
+  printf("Type a departement to delete: \n");
+  scanf("%d",&departm); 
+
+  for (x=0; x<20; x++)
+  {
+    if(departm == region[x]){
+        printf("\n\n");
+      region[x] = 0;
+      return 1;
+    }
+  }
+   return 0;   
+}
+
+
+
+
+
+
+ // for (i = 0; region[i]!='\0'; i++){
+    // region[i+1] = region[x];
+    // region[x]=value;
